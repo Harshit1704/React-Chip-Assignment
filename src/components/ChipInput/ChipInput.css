@@ -1,0 +1,98 @@
+.chip-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; 
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.chip {
+  background-color: #e0e0e0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.chip-remove {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.highlighted {
+  background-color: #ff9800; /* Highlight color */
+  color: #fff;
+}
+
+.suggestions {
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 100%;
+  left: 0; 
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px; 
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-email {
+  color: #555;
+}
+
+.suggestion:hover {
+  background-color: #f1f1f1;
+}
+
+.input-container {
+  margin-top: 8px;
+  position: relative;
+  width: 500px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  border: none;
+  border-bottom: 2px solid #333; /* Dark color for bottom border */
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-container input:focus {
+  border-bottom: 2px solid #ff9800; /* Adjust focus color as needed */
+}
